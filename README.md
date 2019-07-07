@@ -56,6 +56,10 @@ Este repositório é formado por três aplicações, onde juntas, compôem um ap
 * Um admnistrador deve ser cadastrado usando uma ferramenta REST, por exemplo Insomnia;
 * São apresentados os pedidos mais recentes feitos pelo app mobile em tempo real;
 
+![Web login](https://user-images.githubusercontent.com/18239349/60768811-9107df80-a09e-11e9-9522-445c2a04ad72.png)
+
+![Web](https://user-images.githubusercontent.com/18239349/60768823-af6ddb00-a09e-11e9-8903-f90098a76e71.png)
+
 
 # Mobile app
 
