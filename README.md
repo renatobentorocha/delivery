@@ -1,16 +1,16 @@
-Este repositório é formado por três aplicações, onde juntas, compôem um aplicativo para gerênciar pedidos de entregas. 
+This repository consists of three applications, where together, they compose an application to manage delivery orders.
 
 
 # API
 
-* Deve-se criar uma arquivo .env na raiz do projeto configurando algumas variáveis de ambiente. Pode-se usar o arquivo .example.env como exemplo;
-* Deve-se alterar o arquivo src/config/database.js para o uso do sequelize;
-* Após as configurações e a criação do banco de dados no postgres, pode-se executar o comando **yarn sequelize db:migrate** para a criação das tabelas no banco;
-* Algumas rotas da aplicação só podem ser acessadas por usuários administradores. Tais usuários devem ser cadastrados usando, por exemplo, o insomnia. Os demais usuários, clientes, serão cadastrados pela aplicação mobile;
-* As rotas que só podem ser acessadas por administradores estão marcadas abaixo.
+* You must create an .env file at the root of the project to set up some environment variables. You can use the .example.env file as an example;
+* You should change the src / config / database.js file to use the sequelize according to your database access settings;
+* After the configuration and creation of the database in postgres, you can execute the command **yarn sequelize db: migrate** to create the tables in the database;
+* Some application routes can only be accessed by admin users. Such users should be enrolled using, for example, insomnia. The other users, customers, will be registered by the mobile application;
+* The application routes are listed below, some are marked for access only by administrators.
 
 
-## Rotas
+## Routes
 
 - [post] /signin
 - [post] /signup
@@ -46,26 +46,25 @@ Este repositório é formado por três aplicações, onde juntas, compôem um ap
 
 # Rest tools
 
-* As rotas para cadastro devem ser acessadas passando os headers: Authorization, com o token retornado pela rota /signin para um usuário administrador; e device com a strins "**WEB**";
+* The routes for records management should be accessed by passing the headers: Authorization, with the token returned by route / signin to an administrator user; and device with the strings "**WEB**";
 
-* As rotas para autorizadas para a aplicação mobile deve ser acessadas passando os headers: Authorization, com o token retornado pela rota /signin para um usuário cliente; e device com a strins "**MOBILE**";
+* Authorized routes for the mobile application must be accessed by passing the headers: Authorization, with the token returned by route / signin to a client user; and device with a strins "**MOBILE**";
 
 # Web app
 
 * Olny admin users can access;
-* Um admnistrador deve ser cadastrado usando uma ferramenta REST, por exemplo Insomnia;
-* São apresentados os pedidos mais recentes feitos pelo app mobile em tempo real;
+* An administrator must be registered using a REST tool, for example Insomnia;
+* Orders placed through the mobile application are viewed in real time and ordered by the latest;
 
-![Web login](https://user-images.githubusercontent.com/18239349/60768811-9107df80-a09e-11e9-9522-445c2a04ad72.png)
+![login](https://user-images.githubusercontent.com/18239349/60769434-e85d7e00-a0a5-11e9-8fae-85645ecc9d8e.png)
 
-![Web](https://user-images.githubusercontent.com/18239349/60768823-af6ddb00-a09e-11e9-8903-f90098a76e71.png)
-
+![orders](https://user-images.githubusercontent.com/18239349/60769435-edbac880-a0a5-11e9-9602-8927a5eb987a.png)
 
 # Mobile app
 
 * Only clients can access;
-* Novos usuários cadastrados são entendidos automaticamente como clientes;
-* Possui um arquivo .env na raiz para configuração
+* New registered users are automatically understood as clients;
+* There is an .env file in the root for configuration;
 
 ![login_mobil](https://user-images.githubusercontent.com/18239349/60769180-02499180-a0a3-11e9-90b9-f8b017a5220d.jpg)
 
